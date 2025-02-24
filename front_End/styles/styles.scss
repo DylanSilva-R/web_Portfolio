@@ -1,0 +1,180 @@
+
+/*
+css video: https://www.youtube.com/watch?v=yfoY53QXEnI
+reference: https://www.ybrikman.com/
+css animations: https://animania.info/css/squish
+*/
+
+// General data
+:root
+{
+    --teaGreen: #C5EFCB;
+    --myBlack: #020402;
+    --resedaGreen: #758173;
+    --celadon: #A9C5A0;
+    --teaGreenTwo: #C6DEC6;
+    --transformData: transform 0.3s ease;
+    --scaleData: scale(1.5);
+}
+
+body, html
+{
+    text-rendering: optimizeLegibility;
+    font-family: "Anton SC", serif;
+    color: black;
+    background-color: var(--celadon);
+    overflow: auto;
+}
+
+// Navigation bar
+
+.nav-container {
+    background-color: var(--teaGreenTwo);
+    display: flex;  
+    gap: 10%;
+    justify-content: center;  // Center items horizontally
+    justify-self: center;
+    align-items: center;  // Center items vertically
+    padding: 2%;
+    width: 40vw;
+    height: 10vh; 
+    border-radius: 15vw;
+
+    .logo 
+    {
+        /*
+            clamp = Function that alowys reisizing relevant to boundaries.
+            minimum boundary = 3rem, preferred value = 6vw, max value = 5rem
+        */
+
+        width: 20%; 
+        height: 100%;
+        display: flex;  // Centers the logo image inside the logo
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: var(--teaGreen);
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+
+        .logoImage {
+            width: 40%;
+            height: auto;
+        }
+    }
+
+    .logo:hover {
+        transform: scale(1.5);
+    }
+}
+// Sections and active section
+main
+{
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    background-color: var(--celadon);
+}
+
+.active
+{
+    display: inline !important; 
+    //z-index: 3 !important;
+}
+
+section
+{
+    background-color: #020402;
+}
+
+.main-scene
+{
+    display: none;
+    background-color: var(--celadon);
+}
+
+.github-scene
+{
+    display: none;
+    background-color: var(--celadon);
+}
+
+.contact-scene
+{
+    display: none;
+    background-color: var(--teaGreenTwo);
+}
+
+
+.scene
+{
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}
+
+// About me section
+
+// Github section
+.github-scene{
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}
+
+.github-projects
+{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--resedaGreen);
+    gap: 10vh;
+    padding: 5vh 10vw 5vh 10vw; //top right bottomw left
+    border-radius: 5vw;
+}
+
+.project
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr; // 
+    grid-template-rows: 50% 50%;
+    grid-gap: 2%;
+
+    // padding: 10vh 10vw 10vh 10vw; // top right bottom left
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    background-color: white;
+    border-radius: 10px;
+
+    .project-image
+    {
+        justify-self: center;
+        align-self: center;
+        grid-row: 1 / 3;
+        grid-column-start: 1;
+        width: 70%;
+        height: 70%;
+    }
+
+    .git-link
+    {
+        justify-self: center;
+        justify-items: center;
+        grid-row: 1;
+        grid-column: 2;
+        width: 5%;
+        height: 5%;
+    }
+
+    .git-description
+    {
+        justify-items: center;
+        justify-self: center;
+        grid-row-start: 2;
+        grid-column-start: 2;
+        width: 10%;
+        height: 10%;
+    }
+}
+
+// Contact info
