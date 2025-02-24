@@ -2,6 +2,8 @@
 css video: https://www.youtube.com/watch?v=yfoY53QXEnI
 reference: https://www.ybrikman.com/
 css animations: https://animania.info/css/squish
+png resizer: https://www.iloveimg.com/download/yqj436b8c3cs4gxtdlsvh7g5tg1wqbA4wv6rAzld6210xxpdrgfxdszs0pp00lxzmvyzjhc148774znqylpj4z13bAg7cghAw62ht2zqztfyyhx80rgts65yc0zxm3v8nlq3sg7y69wqqpdAjnhpkrcyzwpscfwnj1hzjxjqxpx937nj5v21/1
+
 */
 :root {
   --teaGreen: #C5EFCB;
@@ -13,134 +15,91 @@ css animations: https://animania.info/css/squish
   --scaleData: scale(1.5);
 }
 
-body, html {
+.main-page {
+  width: inherit;
+  height: inherit;
+  text-align: center;
   text-rendering: optimizeLegibility;
   font-family: "Anton SC", serif;
-  color: black;
-  background-color: var(--celadon);
-  overflow: auto;
+  background-color: var(--resedaGreen);
 }
 
-.nav-container {
-  background-color: var(--teaGreenTwo);
-  display: flex;
-  gap: 10%;
-  justify-content: center;
-  justify-self: center;
-  align-items: center;
-  padding: 2%;
-  width: 40vw;
-  height: 10vh;
-  border-radius: 15vw;
-}
-.nav-container .logo {
-  /*
-      clamp = Function that alowys reisizing relevant to boundaries.
-      minimum boundary = 3rem, preferred value = 6vw, max value = 5rem
-  */
-  width: 20%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: var(--teaGreen);
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-}
-.nav-container .logo .logoImage {
-  width: 40%;
-  height: auto;
-}
-.nav-container .logo:hover {
-  transform: scale(1.5);
-}
-
-main {
-  justify-content: center;
-  justify-self: center;
-  justify-items: center;
-  background-color: var(--celadon);
-}
-
-.active {
-  display: inline !important;
-}
-
-section {
-  background-color: #020402;
-}
-
-.main-scene {
-  display: none;
-  background-color: var(--celadon);
-}
-
-.github-scene {
-  display: none;
-  background-color: var(--celadon);
-}
-
-.contact-scene {
-  display: none;
-  background-color: var(--teaGreenTwo);
-}
-
-.scene {
+.main-page-element {
   justify-content: center;
   justify-items: center;
   justify-self: center;
-}
-
-.github-scene {
-  justify-content: center;
-  justify-items: center;
-  justify-self: center;
-}
-
-.github-projects {
+  gap: 5vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--resedaGreen);
-  gap: 10vh;
-  padding: 5vh 10vw 5vh 10vw;
-  border-radius: 5vw;
 }
-
-.project {
+.main-page-element .nav-container {
+  background-color: var(--teaGreenTwo);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  padding: 5%;
+  width: 25%;
+  height: 15%;
+  border-style: solid;
+  border-radius: 15vw;
+  border-width: 0.5vw;
+  border-color: var(--celadon);
+}
+.main-page-element .nav-container .logo-btn {
+  padding: 10% 10% 10% 10%;
+  width: 50%;
+  height: 60%;
+  border-radius: 50%;
+  background-color: var(--teaGreen);
+  transition: transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in;
+}
+.main-page-element .nav-container .logo-btn .logo-image {
+  height: 40%;
+  width: 60%;
+}
+.main-page-element .nav-container .logo-btn:hover {
+  background-color: var(--resedaGreen);
+  transform: scale(1.5);
+}
+.main-page-element .main-scene {
+  display: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50% 50%;
-  grid-gap: 2%;
-  justify-content: center;
-  justify-items: center;
-  justify-self: center;
+  grid-template-rows: 50% 50% 50% 50%;
   background-color: white;
-  border-radius: 10px;
 }
-.project .project-image {
-  justify-self: center;
-  align-self: center;
-  grid-row: 1/3;
-  grid-column-start: 1;
-  width: 70%;
-  height: 70%;
+.main-page-element .main-scene .header-container {
+  background-color: var(--teaGreen);
+  grid-row: 1;
+  grid-column: 1;
 }
-.project .git-link {
-  justify-self: center;
-  justify-items: center;
+.main-page-element .main-scene .head-shot {
+  border-radius: 25px;
+  background-color: var(--myBlack);
+  grid-row: 2/4;
+  grid-column: 1;
+}
+.main-page-element .main-scene .head-shot .self-image {
+  width: 50%;
+}
+.main-page-element .main-scene .header-two-container {
+  background-color: var(--resedaGreen);
   grid-row: 1;
   grid-column: 2;
-  width: 5%;
-  height: 5%;
 }
-.project .git-description {
-  justify-items: center;
-  justify-self: center;
-  grid-row-start: 2;
-  grid-column-start: 2;
-  width: 10%;
-  height: 10%;
+.main-page-element .main-scene .header-two-container .header-two-text {
+  padding-left: 5%;
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: left;
+}
+.main-page-element .main-scene .paragraph-container {
+  background-color: var(--teaGreenTwo);
+  grid-row: 2;
+  grid-column: 2;
 }
 
 /*# sourceMappingURL=styles.css.map */

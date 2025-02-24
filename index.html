@@ -12,111 +12,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class = "main-page">
 
     <!--Navigation bar-->
-    <!-- <div class = "nav-container">
-        <div class = "logosContainer">
+    
 
-            <div class = "logo">
-                <button class = logoBtn type = "button" onclick="screenTransition(0)">
-                    <img class = "logoImage" src = "imgs/home.png"/>
+
+    <!--Sections-->
+    <main class = "main-page-element">
+        <div class = "nav-container">
+            <div>
+                <button class = "logo-btn" type = "button" onclick="toHomePage()">
+                    <img class = "logo-image" src = "imgs/home.png"/>
                 </button>
             </div>
     
-            <div class = "logo">
-                <button class = "logoBtn" type = "button" onclick = "screenTransition(1)">
-                    <img class = "logoImage" src = "imgs/github-mark-c791e9551fe4/github-mark/github-mark.png"/>
+            <div>
+                <button class = "logo-btn" type = "button" onclick = "toGithubProjectsPage()">
+                    <img class = "logo-image" src = "imgs/github-mark.png"/>
                 </button>
             </div>
-
         </div>
-    </div> -->
 
-    <div class="nav-container">
-        <div class="logo" onclick="screenTransition(0)">
-            <img class="logoImage" src="imgs/home.png"/>
-        </div>
-        <div class="logo" onclick="screenTransition(1)">
-            <img class="logoImage" src="imgs/github-mark-c791e9551fe4/github-mark/github-mark.png"/>
-        </div>
-        <!-- You can add more logos or other elements here -->
-    </div>
-
-    <!--Sections-->
-    <main>
-        <section class = "scene main-scene active">
+        <section class = "main-scene">
 
             <div class = "header-container">
                 <h1>Hi, my name is Dylan</h1>
             </div>
 
+            <div class = "head-shot">
+                <img class = "self-image" src = "imgs/me.png">
+            </div>
             
-            <div class = "header-two-containr">
-                <h2>
+            <div class = "header-two-container">
+                <h2 class = "header-two-text">
                     About Me:
                 </h2>
             </div>
 
             <div class = "paragraph-container">
                 <p>
-                    I fart and have a lot of sex.
+                    I do stuff.
                 </p>
             </div>
-        </section>
-
-        <section class = "scene github-scene">
-
-            <h1>Projects and Experience</h1>
-
-            <div class = "github-projects">
-                <div class = "project">
-
-                    <div class = "project-image">
-                        <img class = "project-image" src = "/imgs/bank.png">
-                    </div>
-
-                    <div class = "git-link">
-                        <a class = "git-link" href = "https://github.com/DylanSilva-R/Banking_System_-Simulation">
-                            Banking simulation
-                        </a>    
-                    </div>
-                    
-                    <div class = "git-description">
-                        <p>
-                            I created a banking simulation in c...
-                        </p>
-                    </div>
-                </div>
-
-                <div class = "project">
-                    <img class = "project-image" src = "">
-
-                    <a class = "git-link" href = "https://github.com/DylanSilva-R/CPU_Scheduling_Simulations">
-                        CPU scheduling simulation
-                    </a>
-                    <p class = "git-description">
-
-                    </p>
-
-                </div>
-
-                <div class = "project">
-                    <img class = "project-image" src = "">
-
-                    <a class = "git-link" href = "https://github.com/DylanSilva-R/Timer_Task_Manager_Python">
-                        Timer and task manager python
-                    </a>
-
-                    <p class = "git-description">
-
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class = "scene contact-scene">
-            <h1>Contact info</h1>
         </section>
     </main>
 
