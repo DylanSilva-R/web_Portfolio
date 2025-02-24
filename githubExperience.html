@@ -13,63 +13,70 @@
 </head>
 <body class = "gitHubePage">
 
-    <div class="nav-container">
-        <div class="logo" onclick="toHomePage()">
-            <img class="logoImage" src="imgs/home.png"/>
+    <main class = githubPageElement>
+        <div class = "nav-container slide-in-top animation">
+            <div>
+                <button class = "logo-btn" type = "button" onclick="toHomePage()">
+                    <img class = "logo-image" src = "imgs/home.png"/>
+                </button>
+            </div>
+    
+            <div>
+                <button class = "logo-btn" type = "button" onclick = "toGithubProjectsPage()">
+                    <img class = "logo-image" src = "imgs/github-mark.png"/>
+                </button>
+            </div>
         </div>
-        <div class="logo" onclick="toGithubProjectsPage()">
-            <img class="logoImage" src="imgs/github-mark-c791e9551fe4/github-mark/github-mark.png"/>
-        </div>
-        <!-- You can add more logos or other elements here -->
-    </div>
-
-    <section class = "github-scene">
-        <h1>Projects and Experience</h1>
-        <div class = "github-projects">
-            <div class = "project">
-                <div class = "project-image">
-                    <img class = "project-image" src = "/imgs/bank.png">
+    
+        <section class = "github-scene">
+            <h1>Projects and Experience</h1>
+            <div class = "github-projects">
+                <div class = "project">
+                    <div class = "project-image">
+                        <img class = "project-image" src = "/imgs/bank.png">
+                    </div>
+    
+                    <div class = "git-link">
+                        <a class = "git-link" href = "https://github.com/DylanSilva-R/Banking_System_-Simulation">
+                            Banking simulation
+                        </a>    
+                    </div>
+                    
+                    <div class = "git-description">
+                        <p>
+                            I created a banking simulation in c...
+                        </p>
+                    </div>
                 </div>
-
-                <div class = "git-link">
-                    <a class = "git-link" href = "https://github.com/DylanSilva-R/Banking_System_-Simulation">
-                        Banking simulation
-                    </a>    
+    
+                <div class = "project">
+                    <img class = "project-image" src = "">
+    
+                    <a class = "git-link" href = "https://github.com/DylanSilva-R/CPU_Scheduling_Simulations">
+                        CPU scheduling simulation
+                    </a>
+                    <p class = "git-description">
+    
+                    </p>
+    
                 </div>
-                
-                <div class = "git-description">
-                    <p>
-                        I created a banking simulation in c...
+    
+                <div class = "project">
+                    <img class = "project-image" src = "">
+    
+                    <a class = "git-link" href = "https://github.com/DylanSilva-R/Timer_Task_Manager_Python">
+                        Timer and task manager python
+                    </a>
+    
+                    <p class = "git-description">
+                        
                     </p>
                 </div>
             </div>
+        </section>
+    </main>
 
-            <div class = "project">
-                <img class = "project-image" src = "">
-
-                <a class = "git-link" href = "https://github.com/DylanSilva-R/CPU_Scheduling_Simulations">
-                    CPU scheduling simulation
-                </a>
-                <p class = "git-description">
-
-                </p>
-
-            </div>
-
-            <div class = "project">
-                <img class = "project-image" src = "">
-
-                <a class = "git-link" href = "https://github.com/DylanSilva-R/Timer_Task_Manager_Python">
-                    Timer and task manager python
-                </a>
-
-                <p class = "git-description">
-
-                </p>
-            </div>
-        </div>
-    </section>
+    
     <script src="front_End/js/script.js"></script>
-
 </body>
 </html>

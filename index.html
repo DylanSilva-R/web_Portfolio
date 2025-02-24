@@ -14,13 +14,10 @@
 </head>
 <body class = "main-page">
 
-    <!--Navigation bar-->
-    
-
 
     <!--Sections-->
     <main class = "main-page-element">
-        <div class = "nav-container">
+        <div class = "nav-container slide-in-top animation">
             <div>
                 <button class = "logo-btn" type = "button" onclick="toHomePage()">
                     <img class = "logo-image" src = "imgs/home.png"/>
@@ -36,28 +33,62 @@
 
         <section class = "main-scene">
 
-            <div class = "header-container">
+            <div class = "header-container slide-in-left animation">
                 <h1>Hi, my name is Dylan</h1>
             </div>
 
-            <div class = "head-shot">
+            <div class = "head-shot slide-in-left animation">
                 <img class = "self-image" src = "imgs/me.png">
             </div>
             
-            <div class = "header-two-container">
+            <div class = "header-two-container slide-in-right animation">
                 <h2 class = "header-two-text">
-                    About Me:
+                    About Me
                 </h2>
             </div>
 
-            <div class = "paragraph-container">
-                <p>
-                    I do stuff.
+            <div class = "paragraph-container slide-in-right animation">
+                <p class = "paragraph-text-me">
+                    I am passionate programmer who is willing to learn and take on challenges.
+                    I am a computer science major concentrated in cyber security at Kennesaw State University.
+                    I am a senior with a 3.76 GPA.
+                    I am interested in topics related to full-stack development, cybersecurity, and low-level graphical programming.
+                    And I am looking for internships and entry-level work related to those topics.
                 </p>
+            </div>
+            
+            <div class = "skill-container slide-in-top animation">
+                <h2 class = "skill-header">
+                    Skills
+                </h2>
+
+                <ul class = "skills-list">
+                    <li>Java (5 years)</li>
+                    <li>Python (3 years)</li>
+                    <li>C (6 months)</li>
+                    <li>C++ (3 month)</li>
+                    <li>html (2 years)</li>
+                    <li>css (2 years)</li>
+                    <li>js (2 years)</li>
+                    <li>OOP (5 years)</li>
+                    <li>Microsoft word and excel (5 year)</li>
+                </ul>
+            </div>
+
+            <div class = "contact-container scale-in animation">
+                <p class = "paragraph-text-contact">
+                    contact info: 
+                </p>
+
+                <div class = "contact-logos">
+                    <a class = "contact-logo-link" href = "https://www.linkedin.com/in/dylan-silva-rivas-758601272">
+                        <img class = "contact-logo" src = "imgs/linkedIn.png">
+                    </a>
+
+                </div>
             </div>
         </section>
     </main>
-
 
     <script src="front_End/js/script.js"></script>
 </body>
