@@ -2,67 +2,63 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dylan Silva-Rivas Web Portfolio</title>
-    <link rel = "stylesheet" type="text/css" href="front_End/styles/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="front_End/styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class = "main-page">
 
+<body class="main-page-body">
 
-    <!--Sections-->
-    <main class = "main-page-element">
-        <div class = "nav-container slide-in-top animation">
-            <div>
-                <button class = "logo-btn" type = "button" onclick="toHomePage()">
-                    <img class = "logo-image" src = "imgs/home.png"/>
-                </button>
-            </div>
-    
-            <div>
-                <button class = "logo-btn" type = "button" onclick = "toGithubProjectsPage()">
-                    <img class = "logo-image" src = "imgs/github-mark.png"/>
-                </button>
-            </div>
+    <main class="main-page-element">
+        <div class="nav-container slide-in-top animation">
+            <button class="logo-btn" type="button" onclick="toHomePage()">
+                <img class="logo-image" src="imgs/home.png" />
+            </button>
+
+            <button class="logo-btn" type="button" onclick="toGithubProjectsPage()">
+                <img class="logo-image" src="imgs/github-mark.png" />
+            </button>
         </div>
 
-        <section class = "main-scene">
+        <div class="main-scene">
 
-            <div class = "header-container slide-in-left animation">
+            <div class="header-container slide-in-left animation">
                 <h1>Hi, my name is Dylan</h1>
             </div>
 
-            <div class = "head-shot slide-in-left animation">
-                <img class = "self-image" src = "imgs/me.png">
+            <div class="head-shot slide-in-left animation">
+                <img class="self-image" src="imgs/me.png">
             </div>
-            
-            <div class = "header-two-container slide-in-right animation">
-                <h2 class = "header-two-text">
+
+            <div class="header-two-container slide-in-right animation">
+                <h2 class="header-two-text">
                     About Me
                 </h2>
             </div>
 
-            <div class = "paragraph-container slide-in-right animation">
-                <p class = "paragraph-text-me">
+            <div class="paragraph-container slide-in-right animation">
+                <p class="paragraph-text-me">
                     I am passionate programmer who is willing to learn and take on challenges.
                     I am a computer science major concentrated in cyber security at Kennesaw State University.
                     I am a senior with a 3.76 GPA.
-                    I am interested in topics related to full-stack development, cybersecurity, and low-level graphical programming.
+                    I am interested in topics related to full-stack development, cybersecurity, and low-level
+                    graphical programming.
                     And I am looking for internships and entry-level work related to those topics.
                 </p>
             </div>
-            
-            <div class = "skill-container slide-in-top animation">
-                <h2 class = "skill-header">
+
+            <div class="skill-container slide-in-top animation">
+                <h2 class="skill-header">
                     Skills
                 </h2>
 
-                <ul class = "skills-list">
+                <ul class="skills-list">
                     <li>Java (5 years)</li>
                     <li>Python (3 years)</li>
                     <li>C (6 months)</li>
@@ -75,21 +71,106 @@
                 </ul>
             </div>
 
-            <div class = "contact-container scale-in animation">
-                <p class = "paragraph-text-contact">
-                    contact info: 
+            <div class="contact-container scale-in animation">
+                <p class="paragraph-text-contact">
+                    contact info:
                 </p>
 
-                <div class = "contact-logos">
-                    <a class = "contact-logo-link" href = "https://www.linkedin.com/in/dylan-silva-rivas-758601272">
-                        <img class = "contact-logo" src = "imgs/linkedIn.png">
+                <div class="contact-logos">
+                    <a class="contact-logo-link" href="https://www.linkedin.com/in/dylan-silva-rivas-758601272">
+                        <img class="contact-logo" src="imgs/linkedIn.png">
+                    </a>
+
+                    <a class="contact-logo-link" href="https://github.com/DylanSilva-R">
+                        <img class="contact-logo" src="imgs/github-mark.png">
                     </a>
 
                 </div>
             </div>
-        </section>
+        </div>
     </main>
+
+
+    <!-- <main class="main-page-element">
+        <div class="nav-container slide-in-top animation">
+            <div class="logo-container">
+                <button class="logo-btn" type="button" onclick="toHomePage()">
+                    <img class="logo-image" src="imgs/home.png" />
+                </button>
+            </div>
+
+            <div class=logo-container>
+                <button class="logo-btn" type="button" onclick="toGithubProjectsPage()">
+                    <img class="logo-image" src="imgs/github-mark.png" />
+                </button>
+            </div>
+        </div>
+
+        <div class="contain-main-scene">
+            <div class="main-scene">
+
+                <div class="header-container slide-in-left animation">
+                    <h1>Hi, my name is Dylan</h1>
+                </div>
+
+                <div class="head-shot slide-in-left animation">
+                    <img class="self-image" src="imgs/me.png">
+                </div>
+
+                <div class="header-two-container slide-in-right animation">
+                    <h2 class="header-two-text">
+                        About Me
+                    </h2>
+                </div>
+
+                <div class="paragraph-container slide-in-right animation">
+                    <p class="paragraph-text-me">
+                        I am passionate programmer who is willing to learn and take on challenges.
+                        I am a computer science major concentrated in cyber security at Kennesaw State University.
+                        I am a senior with a 3.76 GPA.
+                        I am interested in topics related to full-stack development, cybersecurity, and low-level
+                        graphical programming.
+                        And I am looking for internships and entry-level work related to those topics.
+                    </p>
+                </div>
+
+                <div class="skill-container slide-in-top animation">
+                    <h2 class="skill-header">
+                        Skills
+                    </h2>
+
+                    <ul class="skills-list">
+                        <li>Java (5 years)</li>
+                        <li>Python (3 years)</li>
+                        <li>C (6 months)</li>
+                        <li>C++ (3 month)</li>
+                        <li>html (2 years)</li>
+                        <li>css (2 years)</li>
+                        <li>js (2 years)</li>
+                        <li>OOP (5 years)</li>
+                        <li>Microsoft word and excel (5 year)</li>
+                    </ul>
+                </div>
+
+                <div class="contact-container scale-in animation">
+                    <p class="paragraph-text-contact">
+                        contact info:
+                    </p>
+
+                    <div class="contact-logos">
+                        <a class="contact-logo-link" href="https://www.linkedin.com/in/dylan-silva-rivas-758601272">
+                            <img class="contact-logo" src="imgs/linkedIn.png">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main> -->
+
 
     <script src="front_End/js/script.js"></script>
 </body>
+
 </html>
